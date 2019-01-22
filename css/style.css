@@ -11,24 +11,41 @@ canvas {
 }
 
 #modal {
-    text-align: center;
-    line-height: 225px;
     position: absolute;
-    width: 450px;
-    height: 300px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    background-color: white;
+    top: calc(50% - 100px);
+    left: calc(50% - 125px);
+    width: 250px;
+    height: 200px;
+    max-width: 90vw;
+    background-color: rgba(107, 42, 153, 0.7);
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.75);
+    border-radius: 10px;    
     z-index: 2;
     display: none;
 }
 
-/*#modal button {
-    position: absolute;
-    width: 120px;
-    height: 40px;
-    bottom: 10px;
-    left: 50%;
-    transform: translate(0,-50%);
-}*/
+#modal span {
+    display: block;
+    font-size: 2em;
+    color: white;
+}
+
+#modal button {    
+    margin: 50px 10px 10px 10px;
+    width: 85px;
+    height: 45px;
+    border-radius: 10px;
+    background-color:rgba(39, 214, 15, 0.836);
+    border: none;
+    box-sizing: border-box;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0px 0px 2px rgba(0,0,0,0.75);
+    transition: .3s;
+}
+
+#modal button:hover {
+    transition: .3s;
+    transform: scale(1.04);
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.75);
+}
